@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gamiflow | Create Campaigns. Capture Leads. Know Where They Came From.</title>
+<meta name="description" content="Gamiflow is a campaign and attribution platform for brands. Create giveaways and lead-generation campaigns, distribute them through influencers, partners, dealers, and stores, and attribute every lead back to its source.">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Gamiflow","applicationCategory":"BusinessApplication","description":"Gamiflow helps brands create interactive campaigns, capture first-party data, distribute campaigns through partners and channels, and attribute leads back to their source.","operatingSystem":"Web"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What's the difference between Conversion and Channel?","acceptedAnswer":{"@type":"Answer","text":"Conversion is about building the campaign and capturing first-party data. Channel is about distributing that same campaign through multiple sources and attributing the results back to whichever one produced them."}},
+{"@type":"Question","name":"Does Gamiflow replace our CRM?","acceptedAnswer":{"@type":"Answer","text":"No. Gamiflow captures and attributes campaign data, then sends it into the CRM, marketing, or business systems your team already uses."}},
+{"@type":"Question","name":"Can I turn off gamification for a campaign?","acceptedAnswer":{"@type":"Answer","text":"Yes. Gamified actions like referrals and bonus entries are optional. Some campaigns work better simple, and that's a supported setup, not a workaround."}},
+{"@type":"Question","name":"What counts as a source in Channel?","acceptedAnswer":{"@type":"Answer","text":"Anything that can distribute a campaign and be measured separately: an influencer, a distributor, a dealer, a retail store, a franchise location, an affiliate, or an event partner."}},
+{"@type":"Question","name":"How does Gamiflow handle bots and low quality entries?","acceptedAnswer":{"@type":"Answer","text":"Through a few layers working together: a dedicated protection layer for automated activity, email verification enabled by default, and flagging of suspicious participation for manual review."}},
+{"@type":"Question","name":"Can agencies run this for multiple clients?","acceptedAnswer":{"@type":"Answer","text":"Yes. Agencies use Gamiflow to build, distribute, and report on campaigns across several clients from one platform."}}
+]}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="8" fill="var(--primary)"/><path d="M8 17V9.5L13 13L18 9.5V17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Gamiflow
+    </a>
+    <div class="nav-links">
+      <div class="nav-item">
+        <span>Product <span class="caret">▾</span></span>
+        <div class="dropdown">
+          <a href="conversion.html">Conversion</a>
+          <a href="channel.html">Channel</a>
+          <a href="distribution.html">Distribution</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span>Use Cases <span class="caret">▾</span></span>
+        <div class="dropdown">
+          <a href="use-cases/influencer-campaigns.html">Influencer Campaigns</a>
+          <a href="use-cases/oem-channel-marketing.html">OEM &amp; Channel Marketing</a>
+          <a href="use-cases/retail-in-store.html">Retail &amp; In-Store</a>
+          <a href="use-cases/multi-location.html">Multi-Location Marketing</a>
+          <a href="use-cases/agencies.html">Agencies</a>
+          <a href="use-cases/product-launches.html">Product Launches</a>
+          <a href="use-cases/events.html">Events &amp; Experiential</a>
+          <a href="use-cases/audience-growth.html">Community &amp; Audience Growth</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <span>Platform <span class="caret">▾</span></span>
+        <div class="dropdown">
+          <a href="platform/lead-capture.html">Lead Capture</a>
+          <a href="platform/gamification.html">Gamification</a>
+          <a href="platform/attribution.html">Attribution</a>
+          <a href="platform/data-quality.html">Data Quality &amp; Protection</a>
+          <a href="platform/integrations.html">Integrations</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="pricing.html">Pricing</a></div>
+      <div class="nav-item"><a href="resources.html">Resources</a></div>
+    </div>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-ghost btn-sm">Log in</a>
+      <a href="#" class="btn btn-primary btn-sm">Start Building a Campaign</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow"><span class="ico">✦</span>Campaigns, Lead Capture &amp; Attribution</span>
+      <h1>Create campaigns. Capture leads. Know where they <span class="accent">came from</span>.</h1>
+      <p class="lede">Gamiflow helps brands build interactive campaigns, capture first-party data, and measure which influencers, partners, stores, and channels are actually generating results.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-primary">Start Building a Campaign</a>
+        <a href="#platform" class="btn btn-ghost">Explore the Platform</a>
+      </div>
+      <div class="flow-line">Create <b>→</b> Distribute <b>→</b> Capture <b>→</b> Attribute <b>→</b> Grow</div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="peek-card">
+        <div class="bar"></div>
+        <div class="t">Source attribution, this week</div>
+        <div class="peek-row"><span>Influencer A</span><b>324 leads</b></div>
+        <div class="peek-row"><span>Distributor B</span><b>218 leads</b></div>
+        <div class="peek-row"><span>Store C</span><b>97 leads</b></div>
+      </div>
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="phone-bar"><span class="t">Summer Giveaway</span><span class="live"><span class="livedot"></span>LIVE</span></div>
+          <div class="p-item"><div class="av">🙋</div><div><div class="name">Maya entered</div><div class="desc">Referred by Influencer A</div><span class="p-tag">verified</span></div></div>
+          <div class="p-item"><div class="av">📩</div><div><div class="name">Joined the newsletter</div><div class="desc">+1 entry earned</div><span class="p-tag">verified</span></div></div>
+          <div class="p-item"><div class="av">🏬</div><div><div class="name">Scanned in-store QR</div><div class="desc">Source: Store C, Downtown</div><span class="p-tag">verified</span></div></div>
+          <div class="p-item"><div class="av">🎉</div><div><div class="name">Campaign live</div><div class="desc">Distributed across 4 sources</div><span class="p-tag">active</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="logo-strip">
+  <div class="wrap">
+    <span class="label">Built for teams running -</span>
+    <div class="logo-row"><span>AGENCIES</span><span>OEMS &amp; CHANNEL MARKETERS</span><span>RETAIL &amp; FRANCHISE BRANDS</span><span>EVENT &amp; EXPERIENTIAL TEAMS</span></div>
+  </div>
+</div>
+
+<!-- THE PROBLEM -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="ico">◆</span>Why attribution matters</span>
+      <h2>Most campaigns tell you what happened. Gamiflow helps you understand where it came from.</h2>
+      <p>A campaign may generate thousands of entries or leads. But the important question is often left unanswered: who actually generated them?</p>
+    </div>
+    <div class="q-chip-row reveal">
+      <span class="q-chip">An influencer?</span>
+      <span class="q-chip">A distributor?</span>
+      <span class="q-chip">A retail store?</span>
+      <span class="q-chip">A dealer?</span>
+      <span class="q-chip">An event?</span>
+      <span class="q-chip">A marketing partner?</span>
+    </div>
+    <p class="resolve-line reveal">Gamiflow connects campaign activity back to the source that generated it. That gives your team a clearer view of not just campaign performance, but the channels behind that performance.</p>
+  </div>
+</section>
+
+<!-- TWO WAYS TO GROW -->
+<section class="section" style="background:var(--wash);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="ico">⇄</span>One platform, two ways to grow</span>
+      <h2>One Platform. Two Ways to Grow.</h2>
+      <p>Gamiflow is built around two core campaign modules. Use one, or use both together.</p>
+    </div>
+    <div class="engines-grid">
+      <div class="engine-card reveal">
+        <span class="engine-tag">Conversion</span>
+        <h3>Capture and grow your audience.</h3>
+        <p class="sub">Create giveaways, lead-generation campaigns, and interactive experiences that turn participation into valuable first-party data.</p>
+        <ul class="engine-list">
+          <li>Generate leads</li>
+          <li>Grow an audience</li>
+          <li>Collect consented customer data</li>
+          <li>Launch a product</li>
+          <li>Build an email list</li>
+        </ul>
+        <div class="cta"><a href="conversion.html" class="btn btn-ghost btn-sm">Explore Conversion →</a></div>
+      </div>
+      <div class="engine-card hi reveal">
+        <span class="engine-tag">Channel</span>
+        <h3>Know where your leads come from.</h3>
+        <p class="sub">Distribute campaigns through influencers, partners, stores, dealers, distributors, and other sources, then measure what each one contributes.</p>
+        <ul class="engine-list">
+          <li>Give each source a measurable campaign identity</li>
+          <li>Compare performance across sources</li>
+          <li>Answer: which source generated this lead?</li>
+        </ul>
+        <div class="cta"><a href="channel.html" class="btn" style="background:#fff; color:var(--ink);">Explore Channel →</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS, 6 STEPS -->
+<section class="section" id="platform">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="ico">⚙</span>How it works</span>
+      <h2>From campaign idea to measurable growth.</h2>
+    </div>
+    <div class="steps6 reveal">
+      <div class="step6"><span class="num">01 · CREATE</span><h4>Build the campaign</h4><p>Build a giveaway, lead-generation campaign, or interactive experience.</p></div>
+      <div class="step6"><span class="num">02 · DISTRIBUTE</span><h4>Share it out</h4><p>Distribute through your own channels, influencers, partners, stores, or other sources.</p></div>
+      <div class="step6"><span class="num">03 · CAPTURE</span><h4>Collect the data</h4><p>Collect the information and consent your business needs.</p></div>
+      <div class="step6"><span class="num">04 · ATTRIBUTE</span><h4>Trace the source</h4><p>Understand where participation and leads came from.</p></div>
+      <div class="step6"><span class="num">05 · CONNECT</span><h4>Send it onward</h4><p>Send campaign data to the platforms your team already uses.</p></div>
+      <div class="step6"><span class="num">06 · IMPROVE</span><h4>Make better decisions</h4><p>Use campaign and source-level performance data to guide what you do next.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONVERSION DEEP DIVE -->
+<section class="section" id="conversion" style="background:var(--wash);">
+  <div class="wrap">
+    <div class="deepdive">
+      <div class="dd-copy reveal">
+        <span class="eyebrow"><span class="ico">🎁</span>Gamiflow Conversion</span>
+        <h2 style="margin-top:16px; font-size:clamp(24px,3vw,34px);">A giveaway is the mechanism. The data is the asset.</h2>
+        <p style="color:var(--ink-soft); font-size:15.5px; margin:12px 0 8px;">A campaign can generate thousands of entries. The real value comes from what happens next: capturing useful information, collecting clear consent, encouraging meaningful actions, and keeping invalid participation out of your data.</p>
+        <div class="feat-list">
+          <div class="feat"><div class="fi">📋</div><div><h4>Lead capture built around what you need</h4><p>Name, email, location, company, preferences, custom fields, or marketing consent. The form adapts to your campaign, not the other way around.</p></div></div>
+          <div class="feat"><div class="fi">🎮</div><div><h4>Gamified actions</h4><p>Reward joining a community, subscribing, following, sharing, or completing a form, with additional entries. You decide what counts.</p></div></div>
+          <div class="feat"><div class="fi">✅</div><div><h4>Consent built into the experience</h4><p>Participants understand what they're agreeing to as part of the campaign flow itself.</p></div></div>
+        </div>
+      </div>
+      <div class="dd-visual reveal">
+        <div class="phone2">
+          <div class="phone2-screen">
+            <div class="phone2-bar"><span class="t">Summer Giveaway</span></div>
+            <div class="phone2-item"><div class="av">🙋</div><div><div class="name">Maya entered</div><div class="desc">Referred by Influencer A</div></div><span class="time">0:02</span></div>
+            <div class="phone2-item"><div class="av">📩</div><div><div class="name">Newsletter opt-in</div><div class="desc">+1 entry earned</div></div><span class="time">0:11</span></div>
+            <div class="phone2-item"><div class="av">🔁</div><div><div class="name">Shared the campaign</div><div class="desc">+1 entry earned</div></div><span class="time">0:24</span></div>
+            <div class="phone2-item"><div class="av">🏆</div><div><div class="name">Winner selected</div><div class="desc">From verified entries only</div></div><span class="time">1:00</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GAMIFICATION -->
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow reveal"><span class="ico">🎯</span>Gamification</span>
+    <h2 class="reveal" style="font-size:clamp(24px,2.8vw,34px); margin:16px 0 20px;">Give people a reason to participate.</h2>
+    <p class="reveal" style="color:var(--ink-soft); font-size:16px; max-width:640px; margin-bottom:32px;">Participants earn additional entries by completing actions that matter to your campaign. You decide which actions are valuable and how much they contribute.</p>
+    <div class="action-flow reveal">
+      <span class="action-chip">👥 Join a community</span>
+      <span class="arrow-plus">→ +1</span>
+      <span class="action-chip">📬 Subscribe to a channel</span>
+      <span class="arrow-plus">→ +1</span>
+      <span class="action-chip">⭐ Follow a brand</span>
+      <span class="arrow-plus">→ +1</span>
+      <span class="action-chip">🔁 Share a campaign</span>
+      <span class="arrow-plus">→ +1</span>
+      <span class="action-chip">📝 Complete a form</span>
+      <span class="arrow-plus">→ +1</span>
+    </div>
+  </div>
+</section>
+
+<!-- DATA QUALITY -->
+<section class="section" id="data-quality" style="background:var(--wash);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="ico">🛡️</span>Data quality &amp; protection</span>
+      <h2>Better campaign data starts with better participation.</h2>
+      <p>Campaigns can attract automated activity, invalid addresses, and suspicious participation. Gamiflow includes multiple layers designed to help protect the quality of your campaign data.</p>
+    </div>
+    <div class="dq-grid reveal">
+      <div class="dq-card"><div class="di">🤖</div><h4>Bot &amp; automated activity protection</h4><p>A dedicated protection layer helps reduce automated and abusive participation.</p></div>
+      <div class="dq-card"><div class="di">📧</div><h4>Email verification</h4><p>Enabled by default, to help identify invalid or suspicious entries before they count.</p></div>
+      <div class="dq-card"><div class="di">🚩</div><h4>Suspicious activity flagging</h4><p>Potentially suspicious participation gets flagged for review instead of being treated as normal activity.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CHANNEL DEEP DIVE -->
+<section class="section" id="channel">
+  <div class="wrap">
+    <div class="deepdive reverse">
+      <div class="dd-copy reveal">
+        <span class="eyebrow"><span class="ico">📡</span>Gamiflow Channel</span>
+        <h2 style="margin-top:16px; font-size:clamp(24px,3vw,34px);">Know where your leads come from.</h2>
+        <p style="color:var(--ink-soft); font-size:15.5px; margin:12px 0 8px;">A campaign can have many sources. Once the traffic starts arriving, attribution shouldn't disappear.</p>
+        <div class="feat-list">
+          <div class="feat"><div class="fi">⤳</div><div><h4>Distribution without rebuilding</h4><p>Give every source, an influencer, distributor, dealer, retailer, affiliate, or event partner, a measurable way to share the same campaign.</p></div></div>
+          <div class="feat"><div class="fi">◎</div><div><h4>Attribution that names the source</h4><p>See exactly which source produced each lead, not just a single anonymous campaign total.</p></div></div>
+          <div class="feat"><div class="fi">📊</div><div><h4>Channel performance comparison</h4><p>Identify high-performing partners, compare influencers, and understand location-level participation.</p></div></div>
+        </div>
+      </div>
+      <div class="dd-visual reveal">
+        <div class="browser">
+          <div class="browser-bar"><span></span><span></span><span></span><span class="u">app.gamiflow.com/channel/scorecard</span></div>
+          <table class="spec-table">
+            <thead><tr><th>Source</th><th>Type</th><th>Leads generated</th></tr></thead>
+            <tbody>
+              <tr><td>Influencer A</td><td class="mono">creator</td><td class="mono">324</td></tr>
+              <tr><td>Distributor B</td><td class="mono">partner</td><td class="mono">218</td></tr>
+              <tr><td>Store C</td><td class="mono">retail location</td><td class="mono">97</td></tr>
+              <tr><td>Partner D</td><td class="mono">affiliate</td><td class="mono">86</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEXIBLE SOURCES -->
+<section class="section" style="background:var(--wash);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="ico">◈</span>Flexible by design</span>
+      <h2>The source can be a person, a partner, a store, or a location.</h2>
+      <p>Gamiflow's attribution model doesn't care what kind of source is driving participation. The workflow stays the same: create a campaign, give a source a measurable way to distribute it, capture the activity, attribute the outcome.</p>
+    </div>
+    <div class="source-cloud reveal">
+      <span class="source-chip">Influencer</span>
+      <span class="source-chip">Distributor</span>
+      <span class="source-chip">Reseller</span>
+      <span class="source-chip">Dealer</span>
+      <span class="source-chip">Retail store</span>
+      <span class="source-chip">Franchise location</span>
+      <span class="source-chip">Affiliate</span>
+      <span class="source-chip">Event</span>
+      <span class="source-chip">Marketing partner</span>
+      <span class="source-chip">Agency</span>
+    </div>
+  </div>
+</section>
+
+<!-- INTEGRATIONS -->
+<section class="section" id="integrations">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="ico">⌘</span>Integrations</span>
+      <h2>Connect campaign data to the tools your team already uses.</h2>
+      <p>Your campaign shouldn't become another isolated data source. Send leads and activity into the CRM, marketing, and business systems you already run on.</p>
+    </div>
+    <div class="integrations-grid reveal">
+      <div class="integration-tile">HubSpot</div>
+      <div class="integration-tile">Salesforce</div>
+      <div class="integration-tile">Klaviyo</div>
+      <div class="integration-tile">Mailchimp</div>
+      <div class="integration-tile">Shopify</div>
+      <div class="integration-tile">Google Analytics</div>
+      <div class="integration-tile">Zapier</div>
+      <div class="integration-tile">Custom API</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING TEASER -->
+<section class="section">
+  <div class="wrap">
+    <div class="pricing-teaser reveal">
+      <div>
+        <h2>Choose the campaign capacity that fits your growth.</h2>
+        <p>Start with the campaign capabilities you need, and expand as your campaign activity grows. Pricing scales with active campaigns, participant volume, and distribution sources.</p>
+      </div>
+      <a href="pricing.html" class="btn btn-primary">See Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section" style="background:var(--wash);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="ico">❝</span>From teams on Gamiflow</span>
+      <h2>Campaigns that answer more than "how many entries?"</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi reveal"><p>"We finally know which of our retail partners are actually driving sign-ups instead of guessing from foot traffic."</p><div class="who"><div class="avatar">AG</div><div><div class="name">Agency lead</div><div class="role">Placeholder</div></div></div></div>
+      <div class="testi reveal"><p>"Gamification lifted our newsletter opt-in rate more than any static form we'd tried before."</p><div class="who"><div class="avatar">MK</div><div><div class="name">Marketing manager</div><div class="role">Placeholder</div></div></div></div>
+      <div class="testi reveal"><p>"Distribution across 40 franchise locations used to be one big number. Now every location gets its own scorecard."</p><div class="who"><div class="avatar">FR</div><div><div class="name">Franchise brand</div><div class="role">Placeholder</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap" style="max-width:800px;">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="ico">?</span>FAQ</span>
+      <h2>Common questions about Conversion, Channel, and everything between.</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item open">
+        <button class="faq-q">What's the difference between Conversion and Channel? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Conversion is about building the campaign and capturing first-party data. Channel is about distributing that same campaign through multiple sources and attributing the results back to whichever one produced them.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Does Gamiflow replace our CRM? <span class="icon">+</span></button>
+        <div class="faq-a"><p>No. Gamiflow captures and attributes campaign data, then sends it into the CRM, marketing, or business systems your team already uses.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I turn off gamification for a campaign? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Yes. Gamified actions like referrals and bonus entries are optional. Some campaigns work better simple, and that's a supported setup, not a workaround.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What counts as a "source" in Channel? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Anything that can distribute a campaign and be measured separately: an influencer, a distributor, a dealer, a retail store, a franchise location, an affiliate, or an event partner.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How does Gamiflow handle bots and low quality entries? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Through a few layers working together: a dedicated protection layer for automated activity, email verification enabled by default, and flagging of suspicious participation for manual review.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can agencies run this for multiple clients? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Yes. Agencies use Gamiflow to build, distribute, and report on campaigns across several clients from one platform.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap">
+    <h2 class="reveal">Build campaigns that do more than collect entries.</h2>
+    <p class="reveal">Create the campaign. Distribute it through your network. Capture first-party data. Understand where your leads actually came from.</p>
+    <div class="final-ctas reveal">
+      <a href="#" class="btn btn-primary">Start Building a Campaign</a>
+      <a href="#" class="btn btn-ghost">Book a Demo</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="8" fill="var(--primary)"/><path d="M8 17V9.5L13 13L18 9.5V17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Gamiflow</a>
+        <p>A campaign and attribution platform for brands. Create campaigns, capture first-party data, and know where every lead came from.</p>
+      </div>
+      <div class="footer-col"><h5>Product</h5><ul><li><a href="conversion.html">Conversion</a></li><li><a href="channel.html">Channel</a></li><li><a href="distribution.html">Distribution</a></li><li><a href="platform/integrations.html">Integrations</a></li><li><a href="platform/data-quality.html">Data Quality</a></li></ul></div>
+      <div class="footer-col"><h5>Use Cases</h5><ul><li><a href="use-cases/influencer-campaigns.html">Influencer Campaigns</a></li><li><a href="use-cases/oem-channel-marketing.html">OEM &amp; Channel Marketing</a></li><li><a href="use-cases/retail-in-store.html">Retail &amp; In-Store</a></li><li><a href="use-cases/multi-location.html">Multi-Location</a></li><li><a href="use-cases/agencies.html">Agencies</a></li></ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul><li><a href="resources.html">Guides</a></li><li><a href="resources.html">Campaign Ideas</a></li><li><a href="resources.html">Attribution Resources</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>2026 Gamiflow. All rights reserved.</div>
+      <div>Privacy · Terms · Cookie Policy</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+revealEls.forEach(el => io.observe(el));
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+</script>
+</body>
+</html>

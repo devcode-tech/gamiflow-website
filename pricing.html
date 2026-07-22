@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing | Gamiflow</title>
+<meta name="description" content="Choose your Gamiflow plan. Monthly or yearly billing, conversions-based plans, and a custom calculator for additional conversions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="8" fill="var(--primary)"/><path d="M8 17V9.5L13 13L18 9.5V17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Gamiflow</a>
+    <div class="nav-links">
+      <div class="nav-item"><span>Product <span class="caret">▾</span></span>
+        <div class="dropdown"><a href="conversion.html">Conversion</a><a href="channel.html">Channel</a><a href="distribution.html">Distribution</a></div>
+      </div>
+      <div class="nav-item"><span>Use Cases <span class="caret">▾</span></span>
+        <div class="dropdown">
+          <a href="use-cases/influencer-campaigns.html">Influencer Campaigns</a>
+          <a href="use-cases/oem-channel-marketing.html">OEM &amp; Channel Marketing</a>
+          <a href="use-cases/retail-in-store.html">Retail &amp; In-Store</a>
+          <a href="use-cases/multi-location.html">Multi-Location Marketing</a>
+          <a href="use-cases/agencies.html">Agencies</a>
+          <a href="use-cases/product-launches.html">Product Launches</a>
+          <a href="use-cases/events.html">Events &amp; Experiential</a>
+          <a href="use-cases/audience-growth.html">Community &amp; Audience Growth</a>
+        </div>
+      </div>
+      <div class="nav-item"><span>Platform <span class="caret">▾</span></span>
+        <div class="dropdown">
+          <a href="platform/lead-capture.html">Lead Capture</a>
+          <a href="platform/gamification.html">Gamification</a>
+          <a href="platform/attribution.html">Attribution</a>
+          <a href="platform/data-quality.html">Data Quality &amp; Protection</a>
+          <a href="platform/integrations.html">Integrations</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="pricing.html">Pricing</a></div>
+      <div class="nav-item"><a href="resources.html">Resources</a></div>
+    </div>
+    <div class="nav-cta"><a href="#" class="btn btn-ghost btn-sm">Log in</a><a href="#" class="btn btn-primary btn-sm">Start Building a Campaign</a></div>
+  </div>
+</nav>
+
+<header class="hero-simple">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Gamiflow</a> / Pricing</div>
+    <span class="eyebrow"><span class="ico">$</span>Pricing</span>
+    <h1>Choose your Gamiflow plan.</h1>
+    <p>Every plan includes a monthly pool of conversions. Need more? Additional conversions are billed at a simple per-unit rate, no surprise overage fees.</p>
+  </div>
+</header>
+
+<!-- PLANS -->
+<section class="section" style="padding-bottom:60px;">
+  <div class="wrap">
+    <div class="pricing-head reveal">
+      <div class="save-line">Save up to 40% when you subscribe yearly.</div>
+    </div>
+
+    <div class="billing-toggle reveal">
+      <span class="lbl active" id="lblMonthly">Monthly</span>
+      <button class="toggle-switch" id="billingToggle" aria-label="Toggle yearly billing"><span class="knob"></span></button>
+      <span class="lbl" id="lblYearly">Yearly <span class="save-badge">Save 40%</span></span>
+    </div>
+
+    <div class="plan-grid reveal">
+
+      <div class="plan-card">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price"><span class="amt" data-monthly="0" data-yearly="0">$0</span><span class="per">/ mo</span></div>
+        <div class="plan-conv">Includes <b data-monthly="250" data-yearly="500">250</b> conversions / mo</div>
+        <div class="plan-desc">For one brand running a single campaign at a time.</div>
+        <ul class="plan-list">
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>1 active campaign</li>
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Conversion only</li>
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Standard data quality protection</li>
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Basic gamified actions</li>
+        </ul>
+        <a href="#" class="btn btn-ghost">Start free</a>
+        <div class="plan-extra">Additional conversions: <b class="mono">$0.05</b> each</div>
+      </div>
+
+      <div class="plan-card best">
+        <div class="plan-badge">Most popular</div>
+        <div class="plan-name">Growth</div>
+        <div class="plan-price"><span class="amt" data-monthly="199" data-yearly="129">$199</span><span class="per">/ mo</span></div>
+        <div class="plan-conv">Includes <b data-monthly="5,000" data-yearly="10,000">5,000</b> conversions / mo</div>
+        <div class="plan-desc">For teams running multiple campaigns and distributing through several sources.</div>
+        <ul class="plan-list">
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited campaigns</li>
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Conversion + Channel</li>
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Up to 15 distribution sources</li>
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Full gamification &amp; leaderboards</li>
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Standard integrations</li>
+        </ul>
+        <a href="#" class="btn btn-primary">Start free trial</a>
+        <div class="plan-extra">Additional conversions: <b class="mono" data-monthly="$0.04" data-yearly="$0.03">$0.04</b> each</div>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price"><span class="amt" data-monthly="499" data-yearly="329">$499</span><span class="per">/ mo</span></div>
+        <div class="plan-conv">Includes <b data-monthly="25,000" data-yearly="60,000">25,000</b> conversions / mo</div>
+        <div class="plan-desc">For agencies managing multiple clients, or OEMs with large partner networks.</div>
+        <ul class="plan-list">
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Unlimited distribution sources</li>
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Multi-client / multi-brand workspace</li>
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Advanced attribution &amp; reporting</li>
+          <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dedicated support &amp; onboarding</li>
+        </ul>
+        <a href="#" class="btn btn-ghost">Talk to sales</a>
+        <div class="plan-extra">Additional conversions: <b class="mono" data-monthly="$0.02" data-yearly="$0.015">$0.02</b> each</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOM SLIDER -->
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="slider-card reveal">
+      <div>
+        <span class="eyebrow" style="background:rgba(255,255,255,.1); color:#fff;"><span class="ico" style="background:var(--primary);">＋</span>Custom pricing</span>
+        <h3 style="margin-top:14px;">Running well past the included limit? Build your own estimate.</h3>
+        <p>Pick a base plan, then drag the slider to see roughly what a month with extra conversions would cost. Actual invoices are calculated the same way, base plan plus additional conversions at that plan's per-unit rate.</p>
+      </div>
+      <div class="slider-block">
+        <div class="plan-select-row">
+          <button class="plan-select-btn active" data-plan="growth">Growth base</button>
+          <button class="plan-select-btn" data-plan="enterprise">Enterprise base</button>
+        </div>
+        <div class="row-between"><span>Additional conversions / mo</span><b id="convOut">100,000</b></div>
+        <input type="range" class="conv-range" id="convSlider" min="0" max="500000" step="5000" value="100000">
+        <div class="estimate-box">
+          <div class="total" id="estTotal">$4,199 / mo</div>
+          <div class="breakdown" id="estBreakdown">Growth base $199 + 100,000 additional conversions at $0.04</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section" style="background:var(--wash);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="ico">◆</span>Compare plans</span>
+      <h2>Every feature, side by side.</h2>
+    </div>
+    <div class="compare-wrap reveal">
+      <table class="compare-table">
+        <thead>
+          <tr><th>Feature</th><th class="hcol">Starter</th><th class="hcol">Growth</th><th class="hcol">Enterprise</th></tr>
+        </thead>
+        <tbody>
+          <tr class="cat"><td colspan="4">Usage</td></tr>
+          <tr><td class="rowlabel">Active campaigns</td><td>1</td><td class="yes">Unlimited</td><td class="yes">Unlimited</td></tr>
+          <tr><td class="rowlabel">Included conversions / mo</td><td>250</td><td>5,000</td><td>25,000</td></tr>
+          <tr><td class="rowlabel">Additional conversion cost</td><td>$0.05</td><td>$0.04</td><td>$0.02</td></tr>
+          <tr><td class="rowlabel">Distribution sources</td><td class="no">Not included</td><td>15</td><td class="yes">Unlimited</td></tr>
+          <tr><td class="rowlabel">Team members</td><td>1</td><td>5</td><td>Unlimited</td></tr>
+
+          <tr class="cat"><td colspan="4">Conversion</td></tr>
+          <tr><td class="rowlabel">Custom forms &amp; fields</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Gamified actions</td><td>Basic</td><td class="yes">Full</td><td class="yes">Full</td></tr>
+          <tr><td class="rowlabel">Consent collection</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Email verification</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+
+          <tr class="cat"><td colspan="4">Channel &amp; Attribution</td></tr>
+          <tr><td class="rowlabel">Source distribution</td><td class="no">Not included</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Attribution reporting</td><td class="no">Not included</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Channel scorecards</td><td class="no">Not included</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Leaderboards</td><td class="no">Not included</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Advanced multi-touch attribution</td><td class="no">Not included</td><td class="no">Not included</td><td class="yes">✓</td></tr>
+
+          <tr class="cat"><td colspan="4">Data Quality &amp; Security</td></tr>
+          <tr><td class="rowlabel">Bot &amp; automated activity protection</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Suspicious activity flagging</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Role-based access</td><td class="no">Not included</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Full audit log</td><td class="no">Not included</td><td class="no">Not included</td><td class="yes">✓</td></tr>
+
+          <tr class="cat"><td colspan="4">Integrations</td></tr>
+          <tr><td class="rowlabel">HubSpot, Salesforce, Klaviyo, Mailchimp</td><td class="no">Not included</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Zapier &amp; webhooks</td><td class="no">Not included</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Custom API</td><td class="no">Not included</td><td class="no">Not included</td><td class="yes">✓</td></tr>
+
+          <tr class="cat"><td colspan="4">Support</td></tr>
+          <tr><td class="rowlabel">Email support</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Priority support</td><td class="no">Not included</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+          <tr><td class="rowlabel">Dedicated onboarding</td><td class="no">Not included</td><td class="no">Not included</td><td class="yes">✓</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="wrap" style="max-width:800px;">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="ico">?</span>Common questions</span>
+      <h2>Billing, conversions, and plan changes.</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item open">
+        <button class="faq-q">What counts as a conversion? <span class="icon">+</span></button>
+        <div class="faq-a"><p>A conversion is one completed campaign action tied to a lead: an entry submitted, a form completed, or a gamified action finished. Browsing a campaign without completing it doesn't count.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What happens if I go over my included conversions? <span class="icon">+</span></button>
+        <div class="faq-a"><p>You're billed for additional conversions at your plan's per-unit rate, shown on every plan card and in the comparison table above. There's no hard cutoff, your campaigns keep running.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How does yearly billing save money? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Yearly plans are billed annually at a lower effective monthly rate, and come with a larger monthly conversion allowance on top of the discount.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Can I switch between plans? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Yes. Upgrades apply immediately. Downgrades take effect at the end of your current billing cycle.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do agencies get special pricing? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Agencies running campaigns across several clients typically land on Enterprise, where multi-brand workspaces and volume are priced together rather than per seat.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Is there a free plan? <span class="icon">+</span></button>
+        <div class="faq-a"><p>Yes. Starter is free and includes 250 conversions a month, enough to run a small campaign and see how Gamiflow fits your workflow.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="wrap">
+    <h2 class="reveal">Start free. Upgrade when the campaign calls for it.</h2>
+    <div class="final-ctas reveal"><a href="#" class="btn btn-primary">Start Building a Campaign</a><a href="index.html" class="btn btn-ghost">Back to Home →</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><svg class="logo-mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="8" fill="var(--primary)"/><path d="M8 17V9.5L13 13L18 9.5V17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Gamiflow</a>
+        <p>A campaign and attribution platform for brands. Create campaigns, capture first-party data, and know where every lead came from.</p>
+      </div>
+      <div class="footer-col"><h5>Product</h5><ul><li><a href="conversion.html">Conversion</a></li><li><a href="channel.html">Channel</a></li><li><a href="distribution.html">Distribution</a></li><li><a href="platform/integrations.html">Integrations</a></li><li><a href="platform/data-quality.html">Data Quality</a></li></ul></div>
+      <div class="footer-col"><h5>Use Cases</h5><ul><li><a href="use-cases/influencer-campaigns.html">Influencer Campaigns</a></li><li><a href="use-cases/oem-channel-marketing.html">OEM &amp; Channel Marketing</a></li><li><a href="use-cases/retail-in-store.html">Retail &amp; In-Store</a></li><li><a href="use-cases/multi-location.html">Multi-Location</a></li><li><a href="use-cases/agencies.html">Agencies</a></li></ul></div>
+      <div class="footer-col"><h5>Resources</h5><ul><li><a href="resources.html">Guides</a></li><li><a href="resources.html">Campaign Ideas</a></li><li><a href="resources.html">Attribution Resources</a></li></ul></div>
+      <div class="footer-col"><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div>2026 Gamiflow. All rights reserved.</div><div>Privacy · Terms · Cookie Policy</div></div>
+  </div>
+</footer>
+
+<script>
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+revealEls.forEach(el => io.observe(el));
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+
+/* ---- billing toggle ---- */
+const toggle = document.getElementById('billingToggle');
+const lblMonthly = document.getElementById('lblMonthly');
+const lblYearly = document.getElementById('lblYearly');
+let yearly = false;
+
+function renderBilling(){
+  toggle.classList.toggle('yearly', yearly);
+  lblMonthly.classList.toggle('active', !yearly);
+  lblYearly.classList.toggle('active', yearly);
+  document.querySelectorAll('[data-monthly]').forEach(el => {
+    const val = yearly ? el.getAttribute('data-yearly') : el.getAttribute('data-monthly');
+    if (el.classList.contains('amt')) { el.textContent = '$' + val; }
+    else { el.textContent = val; }
+  });
+  updateEstimate();
+}
+toggle.addEventListener('click', () => { yearly = !yearly; renderBilling(); });
+lblMonthly.addEventListener('click', () => { yearly = false; renderBilling(); });
+lblYearly.addEventListener('click', () => { yearly = true; renderBilling(); });
+
+/* ---- custom slider calculator ---- */
+const plans = {
+  growth:     { monthly: { base: 199, rate: 0.04 }, yearly: { base: 129, rate: 0.03 } },
+  enterprise: { monthly: { base: 499, rate: 0.02 }, yearly: { base: 329, rate: 0.015 } }
+};
+let currentPlan = 'growth';
+const slider = document.getElementById('convSlider');
+const convOut = document.getElementById('convOut');
+const estTotal = document.getElementById('estTotal');
+const estBreakdown = document.getElementById('estBreakdown');
+
+document.querySelectorAll('.plan-select-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.plan-select-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentPlan = btn.dataset.plan;
+    updateEstimate();
+  });
+});
+
+function updateEstimate(){
+  const cycle = yearly ? 'yearly' : 'monthly';
+  const cfg = plans[currentPlan][cycle];
+  const additional = parseInt(slider.value, 10);
+  const total = cfg.base + additional * cfg.rate;
+  convOut.textContent = additional.toLocaleString();
+  estTotal.textContent = '$' + total.toLocaleString(undefined, {maximumFractionDigits:0}) + ' / mo';
+  const planLabel = currentPlan === 'growth' ? 'Growth' : 'Enterprise';
+  estBreakdown.textContent = planLabel + ' base $' + cfg.base + ' + ' + additional.toLocaleString() + ' additional conversions at $' + cfg.rate.toFixed(cfg.rate < 0.02 ? 3 : 2);
+}
+slider.addEventListener('input', updateEstimate);
+updateEstimate();
+</script>
+</body>
+</html>
