@@ -1,137 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Influencer Campaigns | Gamiflow</title>
-<meta name="description" content="Turn influencer reach into measurable campaign results. Give every creator a measurable way to promote your campaign and see who's actually generating leads.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Influencer Campaigns | Gamiflow</title>
+  <meta name="description"
+    content="A real-world implementation of influencer campaigns for e-commerce: capture emails through influencer giveaways, track redemptions with unique coupon codes, and calculate ROI and ROAS per creator all the way to purchase.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="../index.html" class="logo"><svg class="logo-mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="8" fill="var(--primary)"/><path d="M8 17V9.5L13 13L18 9.5V17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Gamiflow</a>
-    <div class="nav-links">
-      <div class="nav-item"><span>Product <span class="caret">▾</span></span>
-        <div class="dropdown"><a href="../conversion.html">Conversion</a><a href="../channel.html">Channel</a><a href="../distribution.html">Distribution</a></div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="logo.svg" alt="Gamiflow Logo" style="height: 32px; width: auto;">
+      </a>
+      <div class="nav-links">
+        <div class="nav-item"><span>Product <span class="caret">▾</span></span>
+          <div class="dropdown"><a href="../conversion.html">Conversion</a><a href="../channel.html">Channel</a><a
+              href="../distribution.html">Distribution</a></div>
+        </div>
+        <div class="nav-item"><span>Use Cases <span class="caret">▾</span></span>
+          <div class="dropdown">
+            <a href="influencer-campaigns.html">Influencer Campaigns</a>
+            <a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a>
+            <a href="retail-in-store.html">Retail &amp; In-Store</a>
+            <a href="multi-location.html">Multi-Location Marketing</a>
+            <a href="agencies.html">Agencies</a>
+            <a href="product-launches.html">Product Launches<span class="soon-badge">Soon</span></a>
+            <a href="events.html">Events &amp; Experiential<span class="soon-badge">Soon</span></a>
+            <a href="b2b-events.html">B2B Events</a>
+            <a href="audience-growth.html">Community &amp; Audience Growth<span class="soon-badge">Soon</span></a>
+          </div>
+        </div>
+        <div class="nav-item"><span>Platform <span class="caret">▾</span></span>
+          <div class="dropdown">
+            <a href="../platform/lead-capture.html">Lead Capture</a>
+            <a href="../platform/gamification.html">Gamification</a>
+            <a href="../platform/attribution.html">Attribution</a>
+            <a href="../platform/data-quality.html">Data Quality &amp; Protection</a>
+            <a href="../platform/integrations.html">Integrations</a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="../pricing.html">Pricing</a></div>
+        <div class="nav-item"><a href="../resources.html">Resources</a></div>
       </div>
-      <div class="nav-item"><span>Use Cases <span class="caret">▾</span></span>
-        <div class="dropdown">
-          <a href="influencer-campaigns.html">Influencer Campaigns</a>
-          <a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a>
-          <a href="retail-in-store.html">Retail &amp; In-Store</a>
-          <a href="multi-location.html">Multi-Location Marketing</a>
-          <a href="agencies.html">Agencies</a>
-          <a href="product-launches.html">Product Launches</a>
-          <a href="events.html">Events &amp; Experiential</a>
-          <a href="audience-growth.html">Community &amp; Audience Growth</a>
+      <div class="nav-cta"><a href="#" class="btn btn-ghost btn-sm">Log in</a><a href="#"
+          class="btn btn-primary btn-sm">Start Building a Campaign</a></div>
+    </div>
+  </nav>
+
+  <header class="hero-simple">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="../index.html">Gamiflow</a> / Use Cases / Influencer Campaigns</div>
+      <span class="eyebrow"><span class="ico">🎤</span>Influencer Campaigns</span>
+      <h1>Turn influencer reach into emails, coupon redemptions, and a real ROAS number.</h1>
+      <p>The most common version of this use case is an e-commerce brand running a giveaway through a group of
+        influencers, capturing emails at the top, and tracking every one of those emails through to a coupon-code
+        purchase. Here's exactly how that's built.</p>
+      <div class="hero-ctas"><a href="#" class="btn btn-primary">Start Building a Campaign</a></div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="ico">📍</span>Where this fits</span>
+        <h2>Influencer campaigns touch three stages, not one.</h2>
+        <p>Most teams think of influencer marketing as pure awareness. In practice, one campaign gives you a
+          lead-capture moment, a purchase-tracking moment, and a retention moment, if it's built to capture data at each
+          one.</p>
+      </div>
+      <div class="funnel reveal">
+        <div class="funnel-step active"><span class="stage-label">Stage 1</span>Awareness &amp; entry</div>
+        <div class="funnel-step active"><span class="stage-label">Stage 2</span>Consideration</div>
+        <div class="funnel-step active"><span class="stage-label">Stage 3</span>Purchase</div>
+        <div class="funnel-step"><span class="stage-label">Stage 4</span>Retention</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--wash);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="ico">🧪</span>Real-world implementation</span>
+        <h2>How a DTC skincare brand actually runs this.</h2>
+      </div>
+      <div class="scenario reveal">
+        <span class="company-badge">🧴 Bloom &amp; Co., DTC skincare, Shopify store</span>
+        <p>Bloom &amp; Co. wants to grow its email list ahead of a seasonal sale and prove which influencers are worth
+          rebooking. They partner with 12 micro-influencers (8,000 to 60,000 followers each).</p>
+        <h4>The setup</h4>
+        <ol>
+          <li>Each influencer gets their <b>own tracked entry link</b> (gamiflow.com/bloom/via/mia) and their <b>own
+              coupon code</b> (MIA20), generated from the same campaign.</li>
+          <li>The campaign is a gamified giveaway: entering with an email is the base action, and following Bloom's
+            Instagram or sharing the post earns bonus entries.</li>
+          <li>Every entrant, winner or not, receives their influencer's 20% coupon code by email immediately, so the
+            campaign converts even for people who don't win anything.</li>
+          <li>Influencers post the link in their Stories and bio for 7 to 10 days. Gamiflow's detection layer filters
+            bot and duplicate entries before anyone touches the list.</li>
+          <li>Coupon codes are unique per influencer, so when someone checks out on Shopify, the code itself tells you
+            exactly which creator gets the credit.</li>
+        </ol>
+        <h4>The result Bloom's team actually looks at</h4>
+        <p>Not "how many entries." A per-influencer breakdown of emails captured, coupon redemptions, revenue generated,
+          and cost, so the next rebooking decision is based on ROAS, not follower count.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal"><span class="ico">📇</span>First-party data captured</span>
+      <h2 class="reveal" style="font-size:clamp(24px,2.8vw,34px); margin:16px 0 24px;">What actually lands in your
+        database.</h2>
+      <div class="data-grid reveal">
+        <span class="data-chip">Email address <span class="tag">required</span></span>
+        <span class="data-chip">Marketing consent <span class="tag">required</span></span>
+        <span class="data-chip">Referring influencer <span class="tag">auto-tagged</span></span>
+        <span class="data-chip">Instagram handle <span class="tag">optional</span></span>
+        <span class="data-chip">First name <span class="tag">optional</span></span>
+        <span class="data-chip">Coupon code assigned <span class="tag">auto-tagged</span></span>
+        <span class="data-chip">Purchase status <span class="tag">post-checkout</span></span>
+        <span class="data-chip">Order value <span class="tag">post-checkout</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--wash);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="ico">🔌</span>How it connects to your existing stack</span>
+        <h2>It doesn't replace Shopify or Klaviyo. It feeds them.</h2>
+      </div>
+      <div class="stack-row reveal"><span class="sn">01</span><span class="sc"><b>Entry captured</b> on the campaign
+          page, with the influencer source attached automatically from the tracked link.</span></div>
+      <div class="stack-row reveal"><span class="sn">02</span><span class="sc">New email pushed to <b>Klaviyo or
+            Mailchimp</b> as a segmented list ("Bloom Giveaway, via Mia"), so follow-up emails can be written per
+          influencer if needed.</span></div>
+      <div class="stack-row reveal"><span class="sn">03</span><span class="sc">Coupon code lives in <b>Shopify</b> as a
+          normal discount code. No custom checkout work required.</span></div>
+      <div class="stack-row reveal"><span class="sn">04</span><span class="sc">A <b>Shopify order webhook</b> fires back
+          to Gamiflow whenever that code is used, matching the redemption to the original entry and influencer.</span>
+      </div>
+      <div class="stack-row reveal"><span class="sn">05</span><span class="sc">Revenue and redemption counts roll up
+          into a <b>per-influencer scorecard</b> your team checks before the next booking, not a spreadsheet someone
+          rebuilds by hand.</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal"><span class="ico">📊</span>What the scorecard looks like</span>
+      <h2 class="reveal" style="font-size:clamp(24px,2.8vw,34px); margin:16px 0 30px;">ROAS per influencer, not just
+        entries per influencer.</h2>
+      <div class="browser reveal">
+        <div class="browser-bar"><span></span><span></span><span></span><span
+            class="u">app.gamiflow.com/conversion/bloom-giveaway</span></div>
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Influencer</th>
+              <th>Coupon</th>
+              <th>Emails captured</th>
+              <th>Redemptions</th>
+              <th>Revenue</th>
+              <th>Fee paid</th>
+              <th>ROAS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mia (62K)</td>
+              <td class="mono">MIA20</td>
+              <td class="mono">418</td>
+              <td class="mono">61</td>
+              <td class="mono">$3,110</td>
+              <td class="mono">$400</td>
+              <td class="mono">7.8x</td>
+            </tr>
+            <tr>
+              <td>Jordan (24K)</td>
+              <td class="mono">JORDAN20</td>
+              <td class="mono">205</td>
+              <td class="mono">19</td>
+              <td class="mono">$940</td>
+              <td class="mono">$200</td>
+              <td class="mono">4.7x</td>
+            </tr>
+            <tr>
+              <td>Priya (11K)</td>
+              <td class="mono">PRIYA20</td>
+              <td class="mono">96</td>
+              <td class="mono">22</td>
+              <td class="mono">$1,180</td>
+              <td class="mono">$150</td>
+              <td class="mono">7.9x</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--ink-faint); font-size:13px; margin-top:14px;">Illustrative numbers. In practice this table
+        updates live as redemptions come in from Shopify.</p>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--wash);">
+    <div class="wrap">
+      <div class="section-head reveal center" style="text-align:center; margin:0 auto;">
+        <span class="eyebrow"><span class="ico">🏆</span>Beyond one campaign</span>
+        <h2>Turn it into an ongoing leaderboard.</h2>
+        <p class="center">Run this same structure every quarter and the per-influencer scorecard becomes a running
+          leaderboard. Rebooking decisions stop being about vibes and follower count, and start being about who actually
+          converts your audience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <h2 class="reveal">Give your creators a campaign you can actually measure.</h2>
+      <div class="final-ctas reveal"><a href="#" class="btn btn-primary">Start Building a Campaign</a><a
+          href="../channel.html" class="btn btn-ghost">See Channel →</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <img src="../logo.svg" alt="Gamiflow Logo" style="height: 32px; width: auto;">
+          </a>
+          <p>A campaign and attribution platform for brands. Create campaigns, capture first-party data, and know where
+            every lead came from.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="../conversion.html">Conversion</a></li>
+            <li><a href="../channel.html">Channel</a></li>
+            <li><a href="../distribution.html">Distribution</a></li>
+            <li><a href="../platform/integrations.html">Integrations</a></li>
+            <li><a href="../platform/data-quality.html">Data Quality</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Use Cases</h5>
+          <ul>
+            <li><a href="influencer-campaigns.html">Influencer Campaigns</a></li>
+            <li><a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a></li>
+            <li><a href="retail-in-store.html">Retail &amp; In-Store</a></li>
+            <li><a href="multi-location.html">Multi-Location</a></li>
+            <li><a href="agencies.html">Agencies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="../resources.html">Guides</a></li>
+            <li><a href="../resources.html">Campaign Ideas</a></li>
+            <li><a href="../resources.html">Attribution Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+          </ul>
         </div>
       </div>
-      <div class="nav-item"><span>Platform <span class="caret">▾</span></span>
-        <div class="dropdown">
-          <a href="../platform/lead-capture.html">Lead Capture</a>
-          <a href="../platform/gamification.html">Gamification</a>
-          <a href="../platform/attribution.html">Attribution</a>
-          <a href="../platform/data-quality.html">Data Quality &amp; Protection</a>
-          <a href="../platform/integrations.html">Integrations</a>
-        </div>
+      <div class="footer-bottom">
+        <div>2026 Gamiflow. All rights reserved.</div>
+        <div>Privacy · Terms · Cookie Policy</div>
       </div>
-      <div class="nav-item"><a href="../pricing.html">Pricing</a></div>
-      <div class="nav-item"><a href="../resources.html">Resources</a></div>
     </div>
-    <div class="nav-cta"><a href="#" class="btn btn-ghost btn-sm">Log in</a><a href="#" class="btn btn-primary btn-sm">Start Building a Campaign</a></div>
-  </div>
-</nav>
+  </footer>
 
-<header class="hero-simple">
-  <div class="wrap">
-    <div class="breadcrumb"><a href="../index.html">Gamiflow</a> / Use Cases / Influencer Campaigns</div>
-    <span class="eyebrow"><span class="ico">🎤</span>Influencer Campaigns</span>
-    <h1>Turn influencer reach into measurable campaign results.</h1>
-    <p>Give every influencer a measurable way to promote your campaign, and see which creators are generating participation and leads.</p>
-    <div class="hero-ctas"><a href="#" class="btn btn-primary">Start Building a Campaign</a></div>
-  </div>
-</header>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow"><span class="ico">◆</span>The problem</span>
-      <h2>Reach and impressions don't tell you who took action.</h2>
-      <p>They tell you how many people may have seen a campaign. They don't tell you who actually did something about it. Gamiflow connects campaign activity back to the influencer who generated it.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="background:var(--wash);">
-  <div class="wrap">
-    <div class="section-head reveal center" style="text-align:center;">
-      <span class="eyebrow"><span class="ico">⚙</span>How it works</span>
-      <h2>From creator handoff to a real leaderboard.</h2>
-    </div>
-    <div class="numbered-flow reveal" style="margin:0 auto;">
-      <div class="nf-item"><div class="nf-num">1</div><div><h4>Create the campaign</h4><p>Build a giveaway or lead-generation experience.</p></div></div>
-      <div class="nf-item"><div class="nf-num">2</div><div><h4>Add influencers</h4><p>Give each creator a measurable way to distribute the campaign.</p></div></div>
-      <div class="nf-item"><div class="nf-num">3</div><div><h4>Let them promote</h4><p>Creators share the campaign with their own audiences.</p></div></div>
-      <div class="nf-item"><div class="nf-num">4</div><div><h4>Capture the leads</h4><p>Participants complete the campaign experience.</p></div></div>
-      <div class="nf-item"><div class="nf-num">5</div><div><h4>Attribute the activity</h4><p>See which influencer generated the resulting participation.</p></div></div>
-      <div class="nf-item"><div class="nf-num">6</div><div><h4>Compare performance</h4><p>Identify the creators contributing the most.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow"><span class="ico">🏆</span>Gamified influencer campaigns</span>
-      <h2>Turn promotion into competition.</h2>
-      <p>Create a leaderboard that shows campaign performance across participating creators. It motivates creators, recognizes top performers, and encourages continued promotion. The campaign becomes more than a sponsored post, it becomes a measurable distribution channel.</p>
-    </div>
-    <div class="browser reveal">
-      <div class="browser-bar"><span></span><span></span><span></span><span class="u">app.gamiflow.com/channel/leaderboard</span></div>
-      <table class="spec-table">
-        <thead><tr><th>Rank</th><th>Creator</th><th>Leads generated</th></tr></thead>
-        <tbody>
-          <tr><td class="mono">1</td><td>Influencer A</td><td class="mono">324</td></tr>
-          <tr><td class="mono">2</td><td>Influencer E</td><td class="mono">211</td></tr>
-          <tr><td class="mono">3</td><td>Influencer F</td><td class="mono">158</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<section class="final-cta">
-  <div class="wrap">
-    <h2 class="reveal">Give your creators a campaign worth competing over.</h2>
-    <div class="final-ctas reveal"><a href="#" class="btn btn-primary">Start Building a Campaign</a><a href="../channel.html" class="btn btn-ghost">See Channel →</a></div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="../index.html" class="logo"><svg class="logo-mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="8" fill="var(--primary)"/><path d="M8 17V9.5L13 13L18 9.5V17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Gamiflow</a>
-        <p>A campaign and attribution platform for brands. Create campaigns, capture first-party data, and know where every lead came from.</p>
-      </div>
-      <div class="footer-col"><h5>Product</h5><ul><li><a href="../conversion.html">Conversion</a></li><li><a href="../channel.html">Channel</a></li><li><a href="../distribution.html">Distribution</a></li><li><a href="../platform/integrations.html">Integrations</a></li><li><a href="../platform/data-quality.html">Data Quality</a></li></ul></div>
-      <div class="footer-col"><h5>Use Cases</h5><ul><li><a href="influencer-campaigns.html">Influencer Campaigns</a></li><li><a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a></li><li><a href="retail-in-store.html">Retail &amp; In-Store</a></li><li><a href="multi-location.html">Multi-Location</a></li><li><a href="agencies.html">Agencies</a></li></ul></div>
-      <div class="footer-col"><h5>Resources</h5><ul><li><a href="../resources.html">Guides</a></li><li><a href="../resources.html">Campaign Ideas</a></li><li><a href="../resources.html">Attribution Resources</a></li></ul></div>
-      <div class="footer-col"><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="../pricing.html">Pricing</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><div>2026 Gamiflow. All rights reserved.</div><div>Privacy · Terms · Cookie Policy</div></div>
-  </div>
-</footer>
-
-<script>
-const revealEls = document.querySelectorAll('.reveal');
-const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
-revealEls.forEach(el => io.observe(el));
-</script>
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  </script>
 </body>
+
 </html>

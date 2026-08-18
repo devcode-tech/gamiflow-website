@@ -1,128 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Retail &amp; In-Store | Gamiflow</title>
-<meta name="description" content="Turn in-store attention into first-party data. Give customers a reason to engage while they're in your store and see which locations are generating participation.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retail &amp; In-Store | Gamiflow</title>
+  <meta name="description"
+    content="A real-world implementation of in-store campaigns: unique QR codes per store and per employee, capturing email and SMS for loyalty campaigns and high-ticket sales follow-up. No hardware or POS integration required.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="../index.html" class="logo"><svg class="logo-mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="8" fill="var(--primary)"/><path d="M8 17V9.5L13 13L18 9.5V17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Gamiflow</a>
-    <div class="nav-links">
-      <div class="nav-item"><span>Product <span class="caret">▾</span></span>
-        <div class="dropdown"><a href="../conversion.html">Conversion</a><a href="../channel.html">Channel</a><a href="../distribution.html">Distribution</a></div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <img src="../logo.svg" alt="Gamiflow Logo" style="height: 32px; width: auto;">
+      </a>
+      <div class="nav-links">
+        <div class="nav-item"><span>Product <span class="caret">▾</span></span>
+          <div class="dropdown"><a href="../conversion.html">Conversion</a><a href="../channel.html">Channel</a><a
+              href="../distribution.html">Distribution</a></div>
+        </div>
+        <div class="nav-item"><span>Use Cases <span class="caret">▾</span></span>
+          <div class="dropdown">
+            <a href="influencer-campaigns.html">Influencer Campaigns</a>
+            <a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a>
+            <a href="retail-in-store.html">Retail &amp; In-Store</a>
+            <a href="multi-location.html">Multi-Location Marketing</a>
+            <a href="agencies.html">Agencies</a>
+            <a href="product-launches.html">Product Launches<span class="soon-badge">Soon</span></a>
+            <a href="events.html">Events &amp; Experiential<span class="soon-badge">Soon</span></a>
+            <a href="b2b-events.html">B2B Events</a>
+            <a href="audience-growth.html">Community &amp; Audience Growth<span class="soon-badge">Soon</span></a>
+          </div>
+        </div>
+        <div class="nav-item"><span>Platform <span class="caret">▾</span></span>
+          <div class="dropdown">
+            <a href="../platform/lead-capture.html">Lead Capture</a>
+            <a href="../platform/gamification.html">Gamification</a>
+            <a href="../platform/attribution.html">Attribution</a>
+            <a href="../platform/data-quality.html">Data Quality &amp; Protection</a>
+            <a href="../platform/integrations.html">Integrations</a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="../pricing.html">Pricing</a></div>
+        <div class="nav-item"><a href="../resources.html">Resources</a></div>
       </div>
-      <div class="nav-item"><span>Use Cases <span class="caret">▾</span></span>
-        <div class="dropdown">
-          <a href="influencer-campaigns.html">Influencer Campaigns</a>
-          <a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a>
-          <a href="retail-in-store.html">Retail &amp; In-Store</a>
-          <a href="multi-location.html">Multi-Location Marketing</a>
-          <a href="agencies.html">Agencies</a>
-          <a href="product-launches.html">Product Launches</a>
-          <a href="events.html">Events &amp; Experiential</a>
-          <a href="audience-growth.html">Community &amp; Audience Growth</a>
+      <div class="nav-cta"><a href="#" class="btn btn-ghost btn-sm">Log in</a><a href="#"
+          class="btn btn-primary btn-sm">Start Building a Campaign</a></div>
+    </div>
+  </nav>
+
+  <header class="hero-simple">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="../index.html">Gamiflow</a> / Use Cases / Retail &amp; In-Store</div>
+      <span class="eyebrow"><span class="ico">🏬</span>Retail &amp; In-Store</span>
+      <h1>One QR code per store, one per employee if you want it, no hardware from us either way.</h1>
+      <p>Every store gets a unique QR code and link. What you do with it, print it as a poster, tape it to the register,
+        add it to a receipt template you already have, is entirely up to you. We don't sell or integrate with POS
+        hardware. We just generate the code, capture email and SMS behind it, and tell you exactly which store, and
+        optionally which employee, it came from.</p>
+      <div class="hero-ctas"><a href="#" class="btn btn-primary">Start Building a Campaign</a></div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="ico">📍</span>Where this fits</span>
+        <h2>The moment someone is already standing in your store.</h2>
+        <p>This isn't cold-audience awareness. It's converting attention you already earned, foot traffic, into a
+          channel you can follow up on, whether that's a quick-turn loyalty signup or a considered, high-ticket purchase
+          that closes weeks later.</p>
+      </div>
+      <div class="funnel reveal">
+        <div class="funnel-step active"><span class="stage-label">Stage 1</span>In-store awareness</div>
+        <div class="funnel-step active"><span class="stage-label">Stage 2</span>List &amp; loyalty capture</div>
+        <div class="funnel-step active"><span class="stage-label">Stage 3</span>Purchase &amp; follow-up</div>
+        <div class="funnel-step active"><span class="stage-label">Stage 4</span>Retention &amp; repeat visits</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--wash);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="ico">🧪</span>Real-world implementation</span>
+        <h2>How a 22-location taco chain runs a location-vs-location competition.</h2>
+      </div>
+      <div class="scenario reveal">
+        <span class="company-badge">🌮 Casa Verde Tacos, 22-location fast-casual chain</span>
+        <p>Casa Verde wants two things at once: more SMS subscribers ahead of a menu launch, and a reason for each
+          location's staff to care about hitting a number, the way a leaderboard makes a sales floor competitive.</p>
+        <h4>The setup</h4>
+        <ol>
+          <li>Casa Verde generates a <b>location-specific QR code</b> for each of its 22 stores from Gamiflow. What that
+            code gets printed on is entirely their call, they choose table tents and a small register sticker. Gamiflow
+            doesn't supply or touch any of that hardware.</li>
+          <li>Entrants submit an email and phone number (SMS opt-in), an optional photo of their meal, and their
+            location, the location is pre-filled from the QR code itself, not self-reported.</li>
+          <li>Gamification adds bonus entries for following on Instagram or referring a friend who also enters.</li>
+          <li>A live leaderboard shows entries by location, refreshed daily, so the Round Rock, TX location can see it's
+            ahead of Cedar Park by 40 entries with three days left.</li>
+          <li>The winning location gets a team lunch funded by corporate and a feature on Casa Verde's Instagram, an
+            incentive staff at that location actually feel.</li>
+        </ol>
+        <h4>What Casa Verde walks away with</h4>
+        <p>A larger email and SMS list, segmented by home location from day one, plus real signal on which locations
+          under-index on customer engagement relative to foot traffic, useful for deciding where to focus staff training
+          next.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="ico">🛋️</span>Also works for high-ticket retail</span>
+        <h2>When the sale doesn't close today, the follow-up is the whole game.</h2>
+      </div>
+      <div class="scenario reveal">
+        <span class="company-badge">🛋️ Harlow &amp; Rowe, furniture and mattress showroom, 6 locations</span>
+        <p>Most furniture shoppers don't buy on their first visit. Harlow &amp; Rowe's sales associates need a fast way
+          to capture a browsing customer's details without an awkward handwritten form, and a clear record of which
+          associate actually spent time with them.</p>
+        <h4>The setup</h4>
+        <ol>
+          <li>Each showroom has its own QR code, and each <b>sales associate has their own personal code</b> as well,
+            printed on a small badge or business card they hand over during the conversation.</li>
+          <li>A customer scans the associate's code, not the generic store code, so the lead is attributed to the person
+            who actually did the work, not just the building.</li>
+          <li>The form takes email and phone in under fifteen seconds, plus an optional note field the associate can
+            fill in later ("interested in the Ashford sectional, wants it in charcoal").</li>
+          <li>The captured lead lands in Harlow &amp; Rowe's own CRM, tagged with store, associate, and product
+            interest. <b>Gamiflow does not send any follow-up emails or texts itself.</b> The associate, or the store's
+            own marketing tool, does that follow-up.</li>
+        </ol>
+        <h4>Why the employee-level detail matters here</h4>
+        <p>On a high-ticket floor, commission and follow-up ownership both depend on knowing exactly which associate
+          earns credit for a lead. A store-level QR code alone can't answer that. A personal one can.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal"><span class="ico">📇</span>First-party data captured</span>
+      <h2 class="reveal" style="font-size:clamp(24px,2.8vw,34px); margin:16px 0 24px;">Email and SMS both, plus who gets
+        the credit.</h2>
+      <div class="data-grid reveal">
+        <span class="data-chip">Email address <span class="tag">captured</span></span>
+        <span class="data-chip">Phone number <span class="tag">SMS opt-in</span></span>
+        <span class="data-chip">Home location <span class="tag">auto-tagged from QR</span></span>
+        <span class="data-chip">Attributed employee <span class="tag">auto-tagged, optional</span></span>
+        <span class="data-chip">Product or interest notes <span class="tag">optional field</span></span>
+        <span class="data-chip">Birthday <span class="tag">for birthday club</span></span>
+        <span class="data-chip">Referral source <span class="tag">auto-tagged</span></span>
+        <span class="data-chip">Marketing consent <span class="tag">required</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--wash);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="ico">🔌</span>How it connects to your existing stack</span>
+        <h2>We hand you a code and the data behind it. Everything else stays yours.</h2>
+      </div>
+      <div class="stack-row reveal"><span class="sn">01</span><span class="sc">Gamiflow generates a unique QR code and
+          link <b>per store, and per employee if you want it</b>. Printing it on a poster, a register sticker, or a
+          receipt template you already have is on you, we don't sell or set up any hardware.</span></div>
+      <div class="stack-row reveal"><span class="sn">02</span><span class="sc">Email addresses and phone numbers sync
+          into <b>your own ESP and SMS platform</b> (Klaviyo, Attentive, Podium, or whatever you already run),
+          pre-tagged by store and, where used, by employee.</span></div>
+      <div class="stack-row reveal"><span class="sn">03</span><span class="sc"><b>Gamiflow doesn't send marketing emails
+            or texts.</b> We capture and attribute the lead, then it's your team, or your store staff directly for
+          high-ticket follow-up, who does the outreach.</span></div>
+      <div class="stack-row reveal"><span class="sn">04</span><span class="sc">Loyalty-eligible entries can push into
+          your existing <b>loyalty program</b> as a new member record if one already exists.</span></div>
+      <div class="stack-row reveal"><span class="sn">05</span><span class="sc">Store managers see a <b>permissioned
+            leaderboard</b>, their own store's and employees' numbers, not the full chain-wide customer database.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal"><span class="ico">📊</span>What the location leaderboard looks like</span>
+      <h2 class="reveal" style="font-size:clamp(24px,2.8vw,34px); margin:16px 0 30px;">A number every store manager can
+        see themselves in.</h2>
+      <div class="browser reveal">
+        <div class="browser-bar"><span></span><span></span><span></span><span
+            class="u">app.gamiflow.com/conversion/casa-verde-showdown</span></div>
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th>Entries</th>
+              <th>New SMS subscribers</th>
+              <th>Redemption rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Round Rock, TX</td>
+              <td class="mono">612</td>
+              <td class="mono">540</td>
+              <td class="mono">38%</td>
+            </tr>
+            <tr>
+              <td>Cedar Park, TX</td>
+              <td class="mono">571</td>
+              <td class="mono">498</td>
+              <td class="mono">34%</td>
+            </tr>
+            <tr>
+              <td>South Congress, TX</td>
+              <td class="mono">289</td>
+              <td class="mono">240</td>
+              <td class="mono">22%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--ink-faint); font-size:13px; margin-top:14px;">Illustrative numbers. South Congress's lower
+        redemption rate relative to entries is exactly the kind of signal that prompts a follow-up conversation with
+        that location's team.</p>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--wash);">
+    <div class="wrap">
+      <span class="eyebrow reveal"><span class="ico">📊</span>What employee-level attribution looks like</span>
+      <h2 class="reveal" style="font-size:clamp(24px,2.8vw,34px); margin:16px 0 30px;">Useful the moment commission or
+        follow-up ownership is on the line.</h2>
+      <div class="browser reveal">
+        <div class="browser-bar"><span></span><span></span><span></span><span
+            class="u">app.gamiflow.com/conversion/harlow-rowe-leads</span></div>
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Associate</th>
+              <th>Store</th>
+              <th>Leads captured</th>
+              <th>Consent rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Danielle P.</td>
+              <td class="mono">Harlow &amp; Rowe, North</td>
+              <td class="mono">38</td>
+              <td class="mono">92%</td>
+            </tr>
+            <tr>
+              <td>Marcus T.</td>
+              <td class="mono">Harlow &amp; Rowe, North</td>
+              <td class="mono">24</td>
+              <td class="mono">88%</td>
+            </tr>
+            <tr>
+              <td>Sam K.</td>
+              <td class="mono">Harlow &amp; Rowe, Westside</td>
+              <td class="mono">31</td>
+              <td class="mono">95%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--ink-faint); font-size:13px; margin-top:14px;">Illustrative numbers. This is the exact view a
+        sales manager checks before deciding who follows up on which lead.</p>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <h2 class="reveal">Give every location a number worth competing over.</h2>
+      <div class="final-ctas reveal"><a href="#" class="btn btn-primary">Start Building a Campaign</a><a
+          href="multi-location.html" class="btn btn-ghost">See Multi-Location →</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <img src="../logo.svg" alt="Gamiflow Logo" style="height: 32px; width: auto;">
+          </a>
+          <p>A campaign and attribution platform for brands. Create campaigns, capture first-party data, and know where
+            every lead came from.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="../conversion.html">Conversion</a></li>
+            <li><a href="../channel.html">Channel</a></li>
+            <li><a href="../distribution.html">Distribution</a></li>
+            <li><a href="../platform/integrations.html">Integrations</a></li>
+            <li><a href="../platform/data-quality.html">Data Quality</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Use Cases</h5>
+          <ul>
+            <li><a href="influencer-campaigns.html">Influencer Campaigns</a></li>
+            <li><a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a></li>
+            <li><a href="retail-in-store.html">Retail &amp; In-Store</a></li>
+            <li><a href="multi-location.html">Multi-Location</a></li>
+            <li><a href="agencies.html">Agencies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="../resources.html">Guides</a></li>
+            <li><a href="../resources.html">Campaign Ideas</a></li>
+            <li><a href="../resources.html">Attribution Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+          </ul>
         </div>
       </div>
-      <div class="nav-item"><span>Platform <span class="caret">▾</span></span>
-        <div class="dropdown">
-          <a href="../platform/lead-capture.html">Lead Capture</a>
-          <a href="../platform/gamification.html">Gamification</a>
-          <a href="../platform/attribution.html">Attribution</a>
-          <a href="../platform/data-quality.html">Data Quality &amp; Protection</a>
-          <a href="../platform/integrations.html">Integrations</a>
-        </div>
+      <div class="footer-bottom">
+        <div>2026 Gamiflow. All rights reserved.</div>
+        <div>Privacy · Terms · Cookie Policy</div>
       </div>
-      <div class="nav-item"><a href="../pricing.html">Pricing</a></div>
-      <div class="nav-item"><a href="../resources.html">Resources</a></div>
     </div>
-    <div class="nav-cta"><a href="#" class="btn btn-ghost btn-sm">Log in</a><a href="#" class="btn btn-primary btn-sm">Start Building a Campaign</a></div>
-  </div>
-</nav>
+  </footer>
 
-<header class="hero-simple">
-  <div class="wrap">
-    <div class="breadcrumb"><a href="../index.html">Gamiflow</a> / Use Cases / Retail &amp; In-Store</div>
-    <span class="eyebrow"><span class="ico">🏬</span>Retail &amp; In-Store</span>
-    <h1>Turn in-store attention into first-party data.</h1>
-    <p>Give customers a reason to engage while they're in your store, and see which locations are generating customer participation.</p>
-    <div class="hero-ctas"><a href="#" class="btn btn-primary">Start Building a Campaign</a></div>
-  </div>
-</header>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow"><span class="ico">◆</span>The experience</span>
-      <h2>A visit becomes a relationship.</h2>
-    </div>
-    <div class="narrative reveal">
-      <p>A customer visits a store.</p>
-      <p>They see a campaign.</p>
-      <p>They scan a QR code or access the campaign directly.</p>
-      <p>They participate, and provide their information and consent.</p>
-      <p>The resulting activity gets associated with the source that introduced them to the campaign.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="background:var(--wash);">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow"><span class="ico">🏷️</span>Useful for</span>
-      <h2>Any brand where the store is the first touchpoint.</h2>
-    </div>
-    <div class="source-cloud reveal">
-      <span class="source-chip">Retail brands</span><span class="source-chip">Electronics retailers</span><span class="source-chip">Automotive dealers</span>
-      <span class="source-chip">Beauty &amp; cosmetics</span><span class="source-chip">Fashion retailers</span><span class="source-chip">Franchise businesses</span>
-      <span class="source-chip">Shopping centres</span><span class="source-chip">Pop-up stores</span><span class="source-chip">Product demonstrations</span>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head center reveal" style="text-align:center; margin:0 auto;">
-      <h2>Connect the physical experience to the digital relationship.</h2>
-      <p class="center">The store is where the customer interaction begins. The campaign gives the brand a way to continue that relationship digitally, long after the customer walks out the door.</p>
-    </div>
-  </div>
-</section>
-
-<section class="final-cta">
-  <div class="wrap">
-    <h2 class="reveal">Give every store a way to be measured on its own.</h2>
-    <div class="final-ctas reveal"><a href="#" class="btn btn-primary">Start Building a Campaign</a><a href="multi-location.html" class="btn btn-ghost">See Multi-Location →</a></div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="../index.html" class="logo"><svg class="logo-mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="8" fill="var(--primary)"/><path d="M8 17V9.5L13 13L18 9.5V17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Gamiflow</a>
-        <p>A campaign and attribution platform for brands. Create campaigns, capture first-party data, and know where every lead came from.</p>
-      </div>
-      <div class="footer-col"><h5>Product</h5><ul><li><a href="../conversion.html">Conversion</a></li><li><a href="../channel.html">Channel</a></li><li><a href="../distribution.html">Distribution</a></li><li><a href="../platform/integrations.html">Integrations</a></li><li><a href="../platform/data-quality.html">Data Quality</a></li></ul></div>
-      <div class="footer-col"><h5>Use Cases</h5><ul><li><a href="influencer-campaigns.html">Influencer Campaigns</a></li><li><a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a></li><li><a href="retail-in-store.html">Retail &amp; In-Store</a></li><li><a href="multi-location.html">Multi-Location</a></li><li><a href="agencies.html">Agencies</a></li></ul></div>
-      <div class="footer-col"><h5>Resources</h5><ul><li><a href="../resources.html">Guides</a></li><li><a href="../resources.html">Campaign Ideas</a></li><li><a href="../resources.html">Attribution Resources</a></li></ul></div>
-      <div class="footer-col"><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="../pricing.html">Pricing</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><div>2026 Gamiflow. All rights reserved.</div><div>Privacy · Terms · Cookie Policy</div></div>
-  </div>
-</footer>
-
-<script>
-const revealEls = document.querySelectorAll('.reveal');
-const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
-revealEls.forEach(el => io.observe(el));
-</script>
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  </script>
 </body>
+
 </html>

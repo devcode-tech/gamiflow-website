@@ -1,126 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OEM &amp; Channel Marketing | Gamiflow</title>
-<meta name="description" content="Turn your partner network into a measurable marketing channel. Help distributors, dealers, and resellers generate demand while your team sees the contribution behind it.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OEM &amp; Channel Marketing | Gamiflow</title>
+  <meta name="description"
+    content="A real-world implementation of OEM channel marketing: product registration and warranty campaigns distributed across an independent dealer network, with co-op spend tied to actual registrations by dealer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
 </head>
+
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="../index.html" class="logo"><svg class="logo-mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="8" fill="var(--primary)"/><path d="M8 17V9.5L13 13L18 9.5V17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Gamiflow</a>
-    <div class="nav-links">
-      <div class="nav-item"><span>Product <span class="caret">▾</span></span>
-        <div class="dropdown"><a href="../conversion.html">Conversion</a><a href="../channel.html">Channel</a><a href="../distribution.html">Distribution</a></div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <img src="../logo.svg" alt="Gamiflow Logo" style="height: 32px; width: auto;">
+      </a>
+      <div class="nav-links">
+        <div class="nav-item"><span>Product <span class="caret">▾</span></span>
+          <div class="dropdown"><a href="../conversion.html">Conversion</a><a href="../channel.html">Channel</a><a
+              href="../distribution.html">Distribution</a></div>
+        </div>
+        <div class="nav-item"><span>Use Cases <span class="caret">▾</span></span>
+          <div class="dropdown">
+            <a href="influencer-campaigns.html">Influencer Campaigns</a>
+            <a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a>
+            <a href="retail-in-store.html">Retail &amp; In-Store</a>
+            <a href="multi-location.html">Multi-Location Marketing</a>
+            <a href="agencies.html">Agencies</a>
+            <a href="product-launches.html">Product Launches<span class="soon-badge">Soon</span></a>
+            <a href="events.html">Events &amp; Experiential<span class="soon-badge">Soon</span></a>
+            <a href="b2b-events.html">B2B Events</a>
+            <a href="audience-growth.html">Community &amp; Audience Growth<span class="soon-badge">Soon</span></a>
+          </div>
+        </div>
+        <div class="nav-item"><span>Platform <span class="caret">▾</span></span>
+          <div class="dropdown">
+            <a href="../platform/lead-capture.html">Lead Capture</a>
+            <a href="../platform/gamification.html">Gamification</a>
+            <a href="../platform/attribution.html">Attribution</a>
+            <a href="../platform/data-quality.html">Data Quality &amp; Protection</a>
+            <a href="../platform/integrations.html">Integrations</a>
+          </div>
+        </div>
+        <div class="nav-item"><a href="../pricing.html">Pricing</a></div>
+        <div class="nav-item"><a href="../resources.html">Resources</a></div>
       </div>
-      <div class="nav-item"><span>Use Cases <span class="caret">▾</span></span>
-        <div class="dropdown">
-          <a href="influencer-campaigns.html">Influencer Campaigns</a>
-          <a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a>
-          <a href="retail-in-store.html">Retail &amp; In-Store</a>
-          <a href="multi-location.html">Multi-Location Marketing</a>
-          <a href="agencies.html">Agencies</a>
-          <a href="product-launches.html">Product Launches</a>
-          <a href="events.html">Events &amp; Experiential</a>
-          <a href="audience-growth.html">Community &amp; Audience Growth</a>
+      <div class="nav-cta"><a href="#" class="btn btn-ghost btn-sm">Log in</a><a href="#"
+          class="btn btn-primary btn-sm">Start Building a Campaign</a></div>
+    </div>
+  </nav>
+
+  <header class="hero-simple">
+    <div class="wrap">
+      <div class="breadcrumb"><a href="../index.html">Gamiflow</a> / Use Cases / OEM &amp; Channel Marketing</div>
+      <span class="eyebrow"><span class="ico">🏭</span>OEM &amp; Channel Marketing</span>
+      <h1>Know which dealer actually drove the registration, not just how many happened.</h1>
+      <p>OEMs rarely sell direct. The real implementation challenge is running one campaign across hundreds of
+        independent dealers who each have their own point of sale and none of whom will hand you their sales data.</p>
+      <div class="hero-ctas"><a href="#" class="btn btn-primary">Start Building a Campaign</a></div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="ico">📍</span>Where this fits</span>
+        <h2>This lives at the purchase-to-retention handoff.</h2>
+        <p>The campaign usually launches the moment a customer buys, and its real value shows up afterward, in warranty
+          registrations, service reminders, and knowing which dealer's marketing effort actually produced the sale.</p>
+      </div>
+      <div class="funnel reveal">
+        <div class="funnel-step"><span class="stage-label">Stage 1</span>Awareness</div>
+        <div class="funnel-step"><span class="stage-label">Stage 2</span>Consideration</div>
+        <div class="funnel-step active"><span class="stage-label">Stage 3</span>Purchase</div>
+        <div class="funnel-step active"><span class="stage-label">Stage 4</span>Retention &amp; service</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--wash);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="ico">🧪</span>Real-world implementation</span>
+        <h2>How a lawn equipment OEM runs this across 340 dealers.</h2>
+      </div>
+      <div class="scenario reveal">
+        <span class="company-badge">🚜 Ridgeline Power Equipment, OEM, independent dealer network</span>
+        <p>Ridgeline sells mowers and trimmers through 340 independently owned dealers. Ridgeline doesn't have access to
+          any dealer's point-of-sale system, and never will. It still needs to know who's buying, register warranties,
+          and see which dealers' local marketing is working.</p>
+        <h4>The setup</h4>
+        <ol>
+          <li>Each dealer gets a <b>co-branded microsite and QR code</b> to hand customers at checkout: "Register your
+            mower, get a free maintenance kit."</li>
+          <li>The QR code is unique per dealer, so a scan at Miller's Outdoor Power in Ohio is attributed differently
+            than one at Frontline Equipment in Texas, automatically.</li>
+          <li>The registration form captures the product model, serial number, purchase date, and customer contact
+            details, all fields Ridgeline's service team actually needs.</li>
+          <li>No point-of-sale integration is required anywhere in this flow. Attribution comes entirely from which
+            dealer's tracked link or QR code was used.</li>
+          <li>Dealers running co-op-funded local ads (Facebook, local paper, radio) get their own campaign link for that
+            spend specifically, separate from their in-store QR code.</li>
+        </ol>
+        <h4>What Ridgeline gets that it didn't have before</h4>
+        <p>A registration count and a co-op cost-per-registration, by dealer, without ever touching a dealer's sales
+          system. That's the whole point: attribution without requiring POS access nobody was going to grant anyway.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal"><span class="ico">📇</span>First-party data captured</span>
+      <h2 class="reveal" style="font-size:clamp(24px,2.8vw,34px); margin:16px 0 24px;">Built around what a service and
+        warranty team actually needs.</h2>
+      <div class="data-grid reveal">
+        <span class="data-chip">Customer name &amp; email <span class="tag">required</span></span>
+        <span class="data-chip">Phone number <span class="tag">for service reminders</span></span>
+        <span class="data-chip">ZIP code <span class="tag">dealer matching</span></span>
+        <span class="data-chip">Product model &amp; serial number <span class="tag">required</span></span>
+        <span class="data-chip">Purchase date <span class="tag">warranty window</span></span>
+        <span class="data-chip">Originating dealer <span class="tag">auto-tagged</span></span>
+        <span class="data-chip">Campaign source (QR vs. co-op ad) <span class="tag">auto-tagged</span></span>
+        <span class="data-chip">Marketing consent <span class="tag">required</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--wash);">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow"><span class="ico">🔌</span>How it connects to your existing stack</span>
+        <h2>Registrations flow to service. Attribution flows to marketing.</h2>
+      </div>
+      <div class="stack-row reveal"><span class="sn">01</span><span class="sc">Customer scans the dealer's QR code or
+          lands on the dealer's tracked link at checkout or in a co-op ad.</span></div>
+      <div class="stack-row reveal"><span class="sn">02</span><span class="sc">Registration data pushes into
+          <b>Ridgeline's Salesforce</b> instance as a new record, tagged with the originating dealer and campaign,
+          triggering the service team's warranty and maintenance-reminder workflow.</span></div>
+      <div class="stack-row reveal"><span class="sn">03</span><span class="sc">Dealer-level counts roll up into a
+          <b>channel scorecard</b> that Ridgeline's marketing team uses to justify or adjust co-op fund allocation each
+          quarter.</span></div>
+      <div class="stack-row reveal"><span class="sn">04</span><span class="sc">Dealers themselves can see their own
+          registration count through a shared, permissioned view, without seeing any other dealer's numbers.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal"><span class="ico">📊</span>What the dealer scorecard looks like</span>
+      <h2 class="reveal" style="font-size:clamp(24px,2.8vw,34px); margin:16px 0 30px;">Cost per registration, by dealer
+        and by channel.</h2>
+      <div class="browser reveal">
+        <div class="browser-bar"><span></span><span></span><span></span><span
+            class="u">app.gamiflow.com/channel/ridgeline-dealers</span></div>
+        <table class="spec-table">
+          <thead>
+            <tr>
+              <th>Dealer</th>
+              <th>Source</th>
+              <th>Registrations</th>
+              <th>Co-op spend</th>
+              <th>Cost / registration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Miller's Outdoor Power, OH</td>
+              <td class="mono">in-store QR</td>
+              <td class="mono">212</td>
+              <td class="mono">$0</td>
+              <td class="mono">$0.00</td>
+            </tr>
+            <tr>
+              <td>Frontline Equipment, TX</td>
+              <td class="mono">local FB co-op</td>
+              <td class="mono">88</td>
+              <td class="mono">$620</td>
+              <td class="mono">$7.05</td>
+            </tr>
+            <tr>
+              <td>Northgate Mowers, WI</td>
+              <td class="mono">in-store QR</td>
+              <td class="mono">146</td>
+              <td class="mono">$0</td>
+              <td class="mono">$0.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="color:var(--ink-faint); font-size:13px; margin-top:14px;">Illustrative numbers. In-store QR
+        registrations show real intent at no incremental cost, while co-op numbers let Ridgeline evaluate paid spend by
+        dealer.</p>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <h2 class="reveal">Know which partners are actually driving demand.</h2>
+      <div class="final-ctas reveal"><a href="#" class="btn btn-primary">Start Building a Campaign</a><a
+          href="../channel.html" class="btn btn-ghost">See Channel →</a></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="logo">
+            <img src="../logo.svg" alt="Gamiflow Logo" style="height: 32px; width: auto;">
+          </a>
+          <p>A campaign and attribution platform for brands. Create campaigns, capture first-party data, and know where
+            every lead came from.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="../conversion.html">Conversion</a></li>
+            <li><a href="../channel.html">Channel</a></li>
+            <li><a href="../distribution.html">Distribution</a></li>
+            <li><a href="../platform/integrations.html">Integrations</a></li>
+            <li><a href="../platform/data-quality.html">Data Quality</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Use Cases</h5>
+          <ul>
+            <li><a href="influencer-campaigns.html">Influencer Campaigns</a></li>
+            <li><a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a></li>
+            <li><a href="retail-in-store.html">Retail &amp; In-Store</a></li>
+            <li><a href="multi-location.html">Multi-Location</a></li>
+            <li><a href="agencies.html">Agencies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="../resources.html">Guides</a></li>
+            <li><a href="../resources.html">Campaign Ideas</a></li>
+            <li><a href="../resources.html">Attribution Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="../pricing.html">Pricing</a></li>
+          </ul>
         </div>
       </div>
-      <div class="nav-item"><span>Platform <span class="caret">▾</span></span>
-        <div class="dropdown">
-          <a href="../platform/lead-capture.html">Lead Capture</a>
-          <a href="../platform/gamification.html">Gamification</a>
-          <a href="../platform/attribution.html">Attribution</a>
-          <a href="../platform/data-quality.html">Data Quality &amp; Protection</a>
-          <a href="../platform/integrations.html">Integrations</a>
-        </div>
+      <div class="footer-bottom">
+        <div>2026 Gamiflow. All rights reserved.</div>
+        <div>Privacy · Terms · Cookie Policy</div>
       </div>
-      <div class="nav-item"><a href="../pricing.html">Pricing</a></div>
-      <div class="nav-item"><a href="../resources.html">Resources</a></div>
     </div>
-    <div class="nav-cta"><a href="#" class="btn btn-ghost btn-sm">Log in</a><a href="#" class="btn btn-primary btn-sm">Start Building a Campaign</a></div>
-  </div>
-</nav>
+  </footer>
 
-<header class="hero-simple">
-  <div class="wrap">
-    <div class="breadcrumb"><a href="../index.html">Gamiflow</a> / Use Cases / OEM &amp; Channel Marketing</div>
-    <span class="eyebrow"><span class="ico">🏭</span>OEM &amp; Channel Marketing</span>
-    <h1>Turn your partner network into a measurable marketing channel.</h1>
-    <p>Help distributors, dealers, resellers, and other channel partners generate demand, while giving your team visibility into the contribution behind the campaign.</p>
-    <div class="hero-ctas"><a href="#" class="btn btn-primary">Start Building a Campaign</a></div>
-  </div>
-</header>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <span class="eyebrow"><span class="ico">◆</span>The problem</span>
-      <h2>Creating the campaign was never the hard part.</h2>
-      <p>Manufacturers and OEMs usually rely on a network of partners to reach the market. The challenge is understanding what happens after the campaign reaches that network.</p>
-    </div>
-    <div class="q-chip-row reveal">
-      <span class="q-chip">Which partners are actively promoting?</span>
-      <span class="q-chip">Which are generating leads?</span>
-      <span class="q-chip">Which locations are contributing?</span>
-      <span class="q-chip">Which partners are worth investing in further?</span>
-    </div>
-  </div>
-</section>
-
-<section class="section" style="background:var(--wash);">
-  <div class="wrap">
-    <div class="section-head reveal center" style="text-align:center;">
-      <span class="eyebrow"><span class="ico">⚙</span>How Gamiflow helps</span>
-      <h2>One chain, from brand to CRM.</h2>
-    </div>
-    <div class="chain reveal">
-      <div class="chain-node"><h4>Brand</h4><p>Creates and manages the campaign.</p></div>
-      <div class="chain-arrow">→</div>
-      <div class="chain-node"><h4>Partner</h4><p>Receives a measurable way to distribute it.</p></div>
-      <div class="chain-arrow">→</div>
-      <div class="chain-node"><h4>Audience</h4><p>Participates in the campaign.</p></div>
-      <div class="chain-arrow">→</div>
-      <div class="chain-node hi"><h4>Gamiflow</h4><p>Connects the activity back to its source.</p></div>
-      <div class="chain-arrow">→</div>
-      <div class="chain-node"><h4>CRM</h4><p>Receives the resulting data for follow-up.</p></div>
-    </div>
-    <p class="resolve-line reveal" style="margin:32px auto 0; text-align:center;">Gamiflow doesn't replace your CRM or sales process. It creates a clearer connection between campaign distribution and the leads generated from that distribution.</p>
-  </div>
-</section>
-
-<section class="final-cta">
-  <div class="wrap">
-    <h2 class="reveal">Know which partners are actually driving demand.</h2>
-    <div class="final-ctas reveal"><a href="#" class="btn btn-primary">Start Building a Campaign</a><a href="../channel.html" class="btn btn-ghost">See Channel →</a></div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="../index.html" class="logo"><svg class="logo-mark" viewBox="0 0 26 26" fill="none"><rect width="26" height="26" rx="8" fill="var(--primary)"/><path d="M8 17V9.5L13 13L18 9.5V17" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Gamiflow</a>
-        <p>A campaign and attribution platform for brands. Create campaigns, capture first-party data, and know where every lead came from.</p>
-      </div>
-      <div class="footer-col"><h5>Product</h5><ul><li><a href="../conversion.html">Conversion</a></li><li><a href="../channel.html">Channel</a></li><li><a href="../distribution.html">Distribution</a></li><li><a href="../platform/integrations.html">Integrations</a></li><li><a href="../platform/data-quality.html">Data Quality</a></li></ul></div>
-      <div class="footer-col"><h5>Use Cases</h5><ul><li><a href="influencer-campaigns.html">Influencer Campaigns</a></li><li><a href="oem-channel-marketing.html">OEM &amp; Channel Marketing</a></li><li><a href="retail-in-store.html">Retail &amp; In-Store</a></li><li><a href="multi-location.html">Multi-Location</a></li><li><a href="agencies.html">Agencies</a></li></ul></div>
-      <div class="footer-col"><h5>Resources</h5><ul><li><a href="../resources.html">Guides</a></li><li><a href="../resources.html">Campaign Ideas</a></li><li><a href="../resources.html">Attribution Resources</a></li></ul></div>
-      <div class="footer-col"><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li><li><a href="../pricing.html">Pricing</a></li></ul></div>
-    </div>
-    <div class="footer-bottom"><div>2026 Gamiflow. All rights reserved.</div><div>Privacy · Terms · Cookie Policy</div></div>
-  </div>
-</footer>
-
-<script>
-const revealEls = document.querySelectorAll('.reveal');
-const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
-revealEls.forEach(el => io.observe(el));
-</script>
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  </script>
 </body>
+
 </html>
